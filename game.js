@@ -73,3 +73,36 @@ window.onload = () => {
     updateChatLog();
   }, 3000);
 };
+
+// HTML structure
+const htmlContent = `
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #monster-container img {
+      width: 200px;
+    }
+    #health-bar {
+      height: 20px;
+      background: red;
+      margin: 10px auto;
+      width: 100%;
+      transition: width 0.3s;
+    }
+    #chat-log {
+      max-height: 200px;
+      overflow-y: auto;
+      background: #f0f0f0;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+
+  <div id="monster-container"></div>
+  <div id="health-bar"></div>
+  <div id="chat-log"></div>
+`;
+
+document.write(htmlContent);
